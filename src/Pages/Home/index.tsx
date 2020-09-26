@@ -14,7 +14,7 @@ const Home: React.FC = () => {
                         <p>Store your playlists and explore them</p>
                     </div>
                 </TitleContainer>
-                <Link to="/playlist" >Start</Link>
+                <Link to="/playlists" >Start</Link>
             </Container>
         </>
     );

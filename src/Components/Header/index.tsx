@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         <Nav>
             <div>
                 <Link to="/" ><AiOutlineHome size={16} /> Home</Link>
-                <Link to="/playlist" ><AiOutlinePlayCircle size={16} /> Playlist</Link>
+                <Link to="/playlists" ><AiOutlinePlayCircle size={16} /> Playlist</Link>
             </div>
             <AiFillYoutube id="logo" size={34} />
             <div>

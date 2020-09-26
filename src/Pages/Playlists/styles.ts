@@ -31,7 +31,7 @@ export const Form = styled.form`
 
 `;
 
-export const Playlists = styled.div`
+export const PlaylistsContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
