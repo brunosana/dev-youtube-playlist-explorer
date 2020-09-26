@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Playlist from './Pages/Playlist';
-import Video from './Pages/Video';
+import Video from './Pages/Videos';
 
 import Header from './Components/Header';
 
@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/playlist" component={Playlist} />
-          <Route path="/video" component={Video} />
+          <Route path="/videos" component={Video} />
         </Switch>
     </BrowserRouter>
     <GlobalStyle />
