@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 8px auto;
-    padding: 0 15px;;
+    padding: 0 15px;
     height: 34px;
     color: #FFF;
 
@@ -60,7 +60,7 @@ export const Nav = styled.nav`
         margin-left: 10px;
         height: 70%;
         font-size: 14px;
-        color: #FF0000;
+        color: #252525;
         padding: 0 12px;
         transition: color 0.2s, background 0.2s;
 

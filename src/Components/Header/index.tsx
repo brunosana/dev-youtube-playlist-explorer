@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillYoutube, AiOutlineHome, AiOutlinePlayCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 import { Nav } from './styles';
 
@@ -7,10 +8,10 @@ const Header: React.FC = () => {
     return (
         <Nav>
             <div>
-                <a href="oi" ><AiOutlineHome size={16} /> Home</a>
-                <a href="oi" ><AiOutlinePlayCircle size={16} /> Playlist</a>
+                <Link to="/" ><AiOutlineHome size={16} /> Home</Link>
+                <Link to="/playlist" ><AiOutlinePlayCircle size={16} /> Playlist</Link>
             </div>
-            <AiFillYoutube size={34} />
+            <AiFillYoutube id="logo" size={34} />
             <div>
                 <input placeholder="Search video..." />
                 <button>Search</button>
@@ -20,8 +21,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
-//AiFillYoutube
-//AiOutlineHome
-//AiOutlinePlayCircle
-//AiOutlineVideoCamera

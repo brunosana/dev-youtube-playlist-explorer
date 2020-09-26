@@ -12,8 +12,8 @@ import GlobalStyle from './styles/Global';
 const App: React.FC = () => {
     return (
     <>
-    <Header />
     <BrowserRouter>
+        <Header />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/playlist" component={Playlist} />
