@@ -60,3 +60,30 @@ export const VideoContainer = styled.div`
     }
 
 `;
+
+export const ButtonArea = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border: none;
+    button {
+        border: 0;
+        border-radius: 30px;
+        background: #FFF;
+        margin-left: 10px;
+        height: 70%;
+        font-size: 25px;
+        font-weight: bold;
+        color: #252525;
+        padding: 10px 20px;
+        transition: color 0.2s, background 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            color: #FFF;
+            background: #FF0000;
+        }
+
+    }
+`;

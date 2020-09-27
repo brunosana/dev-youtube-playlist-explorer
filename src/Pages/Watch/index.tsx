@@ -1,6 +1,6 @@
 import React from 'react';
 import YouTube, { Options } from 'react-youtube';
-import { VideoContainer } from './styles';
+import { VideoContainer, ButtonArea } from './styles';
 import { AiFillCaretRight, AiOutlineArrowLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
@@ -29,6 +29,10 @@ const Watch: React.FC = () => {
                         <h1>Video Name</h1>
                     </div>
                 </div>
+                <ButtonArea>
+                    <button>Next</button>
+                    <button>Previous</button>
+                </ButtonArea>
             </VideoContainer>
         </>
     );
