@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
 import Playlist from './Pages/Playlists';
 import Video from './Pages/Videos';
+import Watch from './Pages/Watch';
 
 import Header from './Components/Header';
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/" exact component={Home} />
           <Route path="/playlists" component={Playlist} />
           <Route path="/videos" component={Video} />
+          <Route path="/watch" component={Watch} />
         </Switch>
     </BrowserRouter>
     <GlobalStyle />
