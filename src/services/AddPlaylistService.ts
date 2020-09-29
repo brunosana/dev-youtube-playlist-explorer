@@ -18,6 +18,15 @@ interface Snippet{
     channelTitle: string;
 }
 
+interface Playlist{
+    id: string;
+    channelId: string;
+    channelTitle: string;
+    title: string;
+    description: string;
+    thumbnail?: string;
+}
+
 interface Response{
     id: string;
     channelId: string;
@@ -32,6 +41,15 @@ class AppPlaylistService {
     const playlistId = url.split('playlist?list=')[1];
     if (!playlistId) {
       throw new Error('Invalid playlist URL');
+    }
+
+    const storagedItems = localStorage.getItem('@YoutubePlaylistExplorer::playlists');
+    if (storagedItems) {
+      const data = JSON.parse(storagedItems) as Playlist[];
+      const checkDuplicatedPlaylistID = data.find((play) => play.id === playlistId);
+      if (checkDuplicatedPlaylistID) {
+        throw new Error('This playlist is already showing');
+      }
     }
 
     const { GOOGLE_API_KEY } = YoutubeConfig;
