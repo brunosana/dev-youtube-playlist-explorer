@@ -32,6 +32,16 @@ Based on [Youtube Developer Docs](https://developers.google.com/youtube)
 
 ## Run Application
 
+First, you have to create a file `src/config/YoutubeData.ts`:
+
+```javascript
+export default {
+    GOOGLE_API_KEY: 'YOU_GOOGLE_API_KEY',
+}
+```
+
+If you don't have a Key, [see this video](https://www.youtube.com/watch?v=_U_VS12uu-o)
+
 Install all dependencies with `yarn` on terminal, for install all dependencies
 
 Type `yarn start` for run the application

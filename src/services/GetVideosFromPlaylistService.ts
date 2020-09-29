@@ -23,6 +23,10 @@ interface Video{
     }
 }
 
-class GetVideosFromPlaylistService {}
+class GetVideosFromPlaylistService {
+  public async execute(playlistId: string): Promise<void> {
+    console.log(playlistId);
+  }
+}
 
 export default GetVideosFromPlaylistService;
