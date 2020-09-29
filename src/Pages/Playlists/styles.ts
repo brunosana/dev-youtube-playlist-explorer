@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Form = styled.form`
+interface FormProps{
+    hasError: boolean;
+}
+
+export const Form = styled.form<FormProps>`
     display: flex;
     width: 100%;
     margin: 0 5%;
@@ -8,6 +12,7 @@ export const Form = styled.form`
         flex: 1;
         height: 50px;
         border: none;
+        ${(props) => props.hasError && css`border: 2px solid #FF0000;`}
         border-radius: 13px 0 0 13px;
         padding: 0 15px;
     }
@@ -101,3 +106,8 @@ export const Container = styled.div`
 
 `;
 
+export const Error = styled.span`
+    width: 100%;
+    color: #FF0000;
+    font-size: 16px;
+`;

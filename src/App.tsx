@@ -10,21 +10,19 @@ import Header from './Components/Header';
 
 import GlobalStyle from './styles/Global';
 
-const App: React.FC = () => {
-    return (
-    <>
+const App: React.FC = () => (
+  <>
     <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/playlists" component={Playlist} />
-          <Route path="/videos" component={Video} />
-          <Route path="/watch" component={Watch} />
-        </Switch>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/playlists" component={Playlist} />
+        <Route path="/videos" component={Video} />
+        <Route path="/watch" component={Watch} />
+      </Switch>
     </BrowserRouter>
     <GlobalStyle />
-    </>
-    );
-};
+  </>
+);
 
 export default App;

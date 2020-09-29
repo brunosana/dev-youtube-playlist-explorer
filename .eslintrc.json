@@ -1,4 +1,3 @@
-```json
 {
     "env": {
         "browser": true,
@@ -32,6 +31,7 @@
       "react-hooks/exhaustive-deps": "warn",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
+      "class-methods-use-this": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -47,4 +47,3 @@
       }
     }
 }
-```
