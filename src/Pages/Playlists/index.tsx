@@ -74,7 +74,7 @@ const Playlists: React.FC = () => {
         { error && <Error>{error}</Error>}
         <PlaylistsContainer>
           {playlists.map((playlist) => (
-            <Link to="/videos">
+            <Link key={playlist.id} to={`/videos/${playlist.id}`}>
               <AiFillYoutube id="videoIcon" size={60} />
               <div>
                 <strong>

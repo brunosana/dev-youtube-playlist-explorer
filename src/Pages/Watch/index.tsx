@@ -1,8 +1,12 @@
 import React from 'react';
 import YouTube, { Options } from 'react-youtube';
 import { AiFillCaretRight, AiOutlineArrowLeft } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useRouteMatch } from 'react-router-dom';
 import { VideoContainer, ButtonArea } from './styles';
+
+interface VideoParams{
+    id: string;
+}
 
 const Watch: React.FC = () => {
   const opts: Options = {
@@ -12,6 +16,9 @@ const Watch: React.FC = () => {
       // https://developers.google.com/youtube/player_parameters
     },
   };
+
+  const { params } = useRouteMatch<VideoParams>();
+  const videoID = params.id;
 
   return (
     <>
@@ -24,7 +31,7 @@ const Watch: React.FC = () => {
           </Link>
         </div>
         <div>
-          <YouTube videoId="6qGwIn6t9gc" opts={opts} />
+          <YouTube videoId={videoID} opts={opts} />
           <div id="videoName">
             <AiFillCaretRight size={30} />
             <h1>Video Name</h1>

@@ -49,6 +49,7 @@ export const PlaylistsContainer = styled.div`
         color: #fff;
         background: #FF0000;
         align-items: center;
+        justify-content: start;
         padding: 10px 15px;
         border-radius: 13px;
         transition: transform 0.2s, background 0.2s;
@@ -64,8 +65,9 @@ export const PlaylistsContainer = styled.div`
                 font-size: 14px;
             }
         }
+
+
         p{
-            margin: 0 auto;
             font-size: 14px;
         }
 

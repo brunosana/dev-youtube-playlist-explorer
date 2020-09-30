@@ -107,3 +107,23 @@ export const VideoContainer = styled.div`
 
     }
 `;
+
+export const Loading = styled.div`
+    color: #fff;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top:100px;
+    font-size: 35px;
+
+    @keyframes colorAnimation {
+    0% {color: #fff; font-size: 35px;}
+    50% {color: #bbb; font-size: 36px; }
+    100% {color: #fff; font-size: 35px; }
+    }
+    animation-name: colorAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+`;
