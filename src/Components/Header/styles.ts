@@ -9,6 +9,14 @@ export const Nav = styled.nav`
     height: 34px;
     color: #FFF;
 
+    #menuSideBar{
+        display: none;
+        background: none;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
     div{
         display: flex;
         height: 100%;
@@ -39,6 +47,7 @@ export const Nav = styled.nav`
     svg{
         color: #FFF;
         transition: color 0.2s;
+        margin: 0 auto;
 
         &:hover {
             color: #FF0000;
@@ -70,6 +79,19 @@ export const Nav = styled.nav`
             background: #FF0000;
         }
 
+    }
+
+    @media (max-width: 555px){
+        justify-content: start;
+        #menuIconBar{
+            display: none;
+        }
+        #menuFormBar{
+            display: none;
+        }
+        #menuSideBar{
+            display: flex;
+        }
     }
 
 `;

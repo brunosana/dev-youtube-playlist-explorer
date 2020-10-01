@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    height: 800px;
+    height: 100vh;
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
@@ -38,6 +38,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 728px){
+        height: 75vh;
         h1{
             font-size: 22px;
         }
@@ -48,6 +49,10 @@ export const Container = styled.div`
             font-size: 20px;
             width: 200px;
             height: 45px;
+        }
+        svg{
+            width: 90px;
+            height: auto;
         }
     }
 
