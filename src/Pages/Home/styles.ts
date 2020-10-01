@@ -37,6 +37,20 @@ export const Container = styled.div`
 
     }
 
+    @media (max-width: 728px){
+        h1{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            font-size: 20px;
+            width: 200px;
+            height: 45px;
+        }
+    }
+
 `;
 
 export const TitleContainer = styled.div`
