@@ -84,27 +84,28 @@ const Video: React.FC = () => {
           voltar
         </Link>
         {playlist
-                && (
-                <Header>
-                  <AiFillCaretRight id="HeaderLogo" size={60} />
-                  <div>
-                    <h1>{playlist.title}</h1>
-                    <PlaylistInfo>
-                      {`${playlist.description.substr(0, 25)}...`}
-                      <span>
-                        <AiOutlineFolderOpen size={15} />
-                        {videos ? videos.length : 'n/a'}
-                        {' '}
-                        files
-                      </span>
-                    </PlaylistInfo>
-                  </div>
-                </Header>
-                )}
+            && (
+            <Header>
+              <AiFillCaretRight id="HeaderLogo" size={60} />
+              <div>
+                <h1>{playlist.title}</h1>
+                <PlaylistInfo>
+                  {`${playlist.description.substr(0, 25)}...`}
+                  <span>
+                    <AiOutlineFolderOpen size={15} />
+                    {videos ? videos.length : 'n/a'}
+                    {' '}
+                    files
+                  </span>
+                </PlaylistInfo>
+              </div>
+            </Header>
+            )}
         <VideoContainer>
-          {videos.length > 0
+          {playlist
+            && videos.length > 0
             ? videos.map((video) => (
-              <Link to={`/watch/${video.videoid}`}>
+              <Link to={`/watch/${playlist.id}/${video.videoid}`}>
                 <AiFillCaretRight id="videoIcon" size={60} />
                 <div>
                   <strong>

@@ -59,6 +59,15 @@ export const VideoContainer = styled.div`
     }
     }
 
+    @media (max-width: 815px){
+        div{
+            iframe{
+                max-width: 90vw;
+                max-height: 30vh;
+            }
+        }
+    }
+
 `;
 
 export const ButtonArea = styled.div`

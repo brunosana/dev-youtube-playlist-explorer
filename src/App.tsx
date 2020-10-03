@@ -18,7 +18,7 @@ const App: React.FC = () => (
         <Route path="/" exact component={Home} />
         <Route path="/playlists" component={Playlist} />
         <Route path="/videos/:id" component={Video} />
-        <Route path="/watch/:id" component={Watch} />
+        <Route path="/watch/:playlistid/:id" component={Watch} />
       </Switch>
     </BrowserRouter>
     <GlobalStyle />
