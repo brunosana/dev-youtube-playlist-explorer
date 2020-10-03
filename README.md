@@ -27,7 +27,7 @@ Based on [Youtube Developer Docs](https://developers.google.com/youtube)
 ### Notes
 
 * Not responsive yet!
-* Not API integration yet! (in progress)
+* API integration working!
 
 
 ## Run Application
