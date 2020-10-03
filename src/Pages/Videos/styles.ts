@@ -38,11 +38,22 @@ export const Header = styled.div`
     background-color: #FFF;
     color: #252525;
     border-radius: 13px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: pre-line;
     h1 {
         font-size: 30px;
     }
     #HeaderLogo{
         margin-right: 5px;
+    }
+
+    @media (max-width: 1025px){
+        h1 {
+            font-size: 20px;
+        }
     }
 `;
 
@@ -80,20 +91,31 @@ export const VideoContainer = styled.div`
         #ClickIcon {
             margin-left: auto;
         }
-        strong{
-            font-size: 26px;
-            span{
-                font-size: 14px;
+        div{
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            white-space: pre-line;
+            strong{
+                font-size: 26px;
+                span{
+                    font-size: 14px;
+                }
+            }
+            p{
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                span{
+                    font-size: 14px;
+                    margin-right: 15px;
+                }
             }
         }
-        p{
-            display: flex;
-            align-items: center;
-            margin: 0 auto;
-            span{
-                font-size: 14px;
-                margin-right: 15px;
-            }
+        svg{
+            width: auto !important;
+            height: auto !important;
         }
 
         &:hover{
@@ -105,6 +127,18 @@ export const VideoContainer = styled.div`
             margin-top: 15px;
         }
 
+    }
+    @media (max-width: 1025px){
+        a {
+            div {
+                strong {
+                    font-size: 20px;
+                }
+            }
+            svg{
+                width: 50px;
+            }
+        }
     }
 `;
 

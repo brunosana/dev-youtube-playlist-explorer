@@ -90,7 +90,7 @@ const Video: React.FC = () => {
                   <div>
                     <h1>{playlist.title}</h1>
                     <PlaylistInfo>
-                      {playlist.description}
+                      {`${playlist.description.substr(0, 25)}...`}
                       <span>
                         <AiOutlineFolderOpen size={15} />
                         {videos ? videos.length : 'n/a'}
