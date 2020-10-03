@@ -43,7 +43,7 @@ interface Video{
 }
 
 const Video: React.FC = () => {
-  const [playlists, setPlaylists] = useState<Playlist[]>(() => {
+  const [playlists] = useState<Playlist[]>(() => {
     const storagedItems = localStorage.getItem('@YoutubePlaylistExplorer::playlists');
     if (storagedItems) {
       return JSON.parse(storagedItems);
@@ -72,6 +72,7 @@ const Video: React.FC = () => {
         }
       });
     }
+    // eslint-disable-next-line
   }, []);
 
   return (
