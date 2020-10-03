@@ -71,7 +71,13 @@ export const PlaylistsContainer = styled.div`
         }
 
         p{
+            max-width: 60vw;
             font-size: 14px;
+            word-wrap: break-word;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            white-space: pre-line;
         }
 
         &:hover{
@@ -85,7 +91,6 @@ export const PlaylistsContainer = styled.div`
         svg{
             width: auto !important;
             height: auto !important;
-            viewbox: auto;
         }
     }
 
