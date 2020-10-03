@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from './styles';
 
 const Header: React.FC = () => {
-  const [showSidebar, setShowSideBar] = useState(true);
+  const [showSidebar, setShowSideBar] = useState(false);
 
   function handleShowSideBar() {
     setShowSideBar(!showSidebar);

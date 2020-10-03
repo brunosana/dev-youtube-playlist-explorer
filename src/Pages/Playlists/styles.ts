@@ -59,13 +59,16 @@ export const PlaylistsContainer = styled.div`
         #ClickIcon {
             margin-left: auto;
         }
-        strong{
+        div{
+            word-wrap: break-word;
+            strong{
             font-size: 26px;
+            text-overflow: ellipsis;
             span{
                 font-size: 14px;
             }
         }
-
+        }
 
         p{
             font-size: 14px;
@@ -79,7 +82,24 @@ export const PlaylistsContainer = styled.div`
         & + a {
             margin-top: 15px;
         }
+        svg{
+            width: auto !important;
+            height: auto !important;
+            viewbox: auto;
+        }
+    }
 
+    @media (max-width: 1025px){
+        a {
+            div {
+                strong {
+                    font-size: 20px;
+                }
+            }
+            svg{
+                width: 50px;
+            }
+        }
     }
 
 `;
@@ -103,6 +123,12 @@ export const Container = styled.div`
         margin-bottom: 20px;
         svg{
             margin-right: 8px;
+        }
+    }
+
+    @media (max-width: 654px){
+        h1{
+            font-size: 22px;
         }
     }
 
