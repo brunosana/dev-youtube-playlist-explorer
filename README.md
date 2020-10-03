@@ -26,8 +26,10 @@ Based on [Youtube Developer Docs](https://developers.google.com/youtube)
 
 ### Notes
 
-* Not responsive yet!
-* API integration working!
+* All pages responsive.
+* API integration working.
+* Search forms not working yet.
+* Previous and Next buttons on Watch page not working yet!
 
 
 ## Run Application
