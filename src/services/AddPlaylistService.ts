@@ -69,12 +69,17 @@ class AppPlaylistService {
 
     const result = response.data as ResponseData;
 
+    const playlistDescription = result.items[0].snippet.description.split('\n').join('. ');
+    const playlistDescriptionLimited = playlistDescription.length > 100
+      ? `${playlistDescription.substring(0, 100)}...`
+      : playlistDescription;
+
     const playlist: Response = {
       id: result.items[0].id,
       channelId: result.items[0].snippet.channelId,
       channelTitle: result.items[0].channelTitle,
       title: result.items[0].snippet.title,
-      description: result.items[0].snippet.description,
+      description: playlistDescriptionLimited,
       thumbnail: result.items[0].snippet.thumbnails.high.url,
     };
 
