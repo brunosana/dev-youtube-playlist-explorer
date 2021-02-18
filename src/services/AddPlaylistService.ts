@@ -1,4 +1,3 @@
-import YoutubeConfig from '../config/YoutubeData';
 import api from './api';
 
 interface ResponseData {
@@ -52,12 +51,10 @@ class AppPlaylistService {
       }
     }
 
-    const { GOOGLE_API_KEY } = YoutubeConfig;
-
     const response = await api.get('/playlists', {
       params: {
         part: 'snippet',
-        key: GOOGLE_API_KEY,
+        key: process.env.REACT_APP_GOOGLE_API_KEY,
         id: playlistId,
         maxResults: 50,
       },

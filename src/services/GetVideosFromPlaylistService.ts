@@ -1,5 +1,4 @@
 import api from './api';
-import YoutubeConfig from '../config/YoutubeData';
 
 interface ResponseData {
     playlistId: string;
@@ -48,14 +47,12 @@ class GetVideosFromPlaylistService {
       throw new Error('Invalid playlist id');
     }
 
-    const { GOOGLE_API_KEY } = YoutubeConfig;
-
     const response = await api.get('/playlistItems', {
       params: {
         part: 'snippet',
         playlistId,
         maxResults: 50,
-        key: GOOGLE_API_KEY,
+        key: process.env.REACT_APP_GOOGLE_API_KEY,
       },
     });
 

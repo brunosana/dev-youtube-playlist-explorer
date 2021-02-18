@@ -34,12 +34,10 @@ Based on [Youtube Developer Docs](https://developers.google.com/youtube)
 
 ## Run Application
 
-First, you have to create a file `src/config/YoutubeData.ts`:
+First, you have to create a file `.env`:
 
-```javascript
-export default {
-    GOOGLE_API_KEY: 'YOU_GOOGLE_API_KEY',
-}
+```
+REACT_APP_GOOGLE_API_KEY=YOU_API_KEY_HERE
 ```
 
 If you don't have a Key, [see this video](https://www.youtube.com/watch?v=_U_VS12uu-o)
