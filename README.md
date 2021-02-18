@@ -1,5 +1,9 @@
 ## Youtube Playlist Explorer
 
+### You can see this website by [clicking here](https://sanatube.netlify.app/)
+
+## Dev settings
+
 Made with ReactJS, [create-react-app](https://github.com/facebook/create-react-app), [styled-components](https://styled-components.com/) and [react-icons](https://react-icons.github.io/react-icons/)!
 
 Based on [Youtube Developer Docs](https://developers.google.com/youtube)
